@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+import { PokemonClient } from 'pokenode-ts';
+
+const api = new PokemonClient();
+const response =  api.listPokemons();
+
+
+---
+
+<Layout title="Pokemon">
+
+
+
+
+
+
+
+
+
+
+</Layout>
