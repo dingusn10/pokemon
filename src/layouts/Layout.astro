@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro'
+import { Pokeball } from '../icons/Pokeball.svg'
+
 export interface Props {
 	title: string;
 }
@@ -11,11 +14,13 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="../src/icons/pokeball.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
+	<Header />
 	<body>
 		<slot />
 	</body>
+	
 </html>

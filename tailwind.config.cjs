@@ -8,7 +8,9 @@ module.exports = {
 		extend: {
 			fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-},
+			}, spacing: {
+				'1/10': '10%',
+}
 		},
 	},
 	plugins: [
