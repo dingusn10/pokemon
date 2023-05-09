@@ -1,18 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PokemonApp from '../components/PokemonApp.jsx';
-import Pagenation from '../components/Pagenation.jsx';
-import gotoNextPage from '../components/PokemonApp.jsx'
-import gotoPreviousPage from '../components/PokemonApp.jsx'
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<PokemonApp client:load />
-		<Pagenation 
-			client:load
-			gotoNextPage={gotoNextPage}
-			gotoPreviousPage={gotoPreviousPage}/>
 	</main>
 </Layout>
 

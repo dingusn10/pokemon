@@ -1,4 +1,6 @@
 import React from 'react'
+import Pagenation from './Pagenation.jsx'
+
 
 export default function PokemonList({pokemon}) {
   return (
@@ -6,6 +8,6 @@ export default function PokemonList({pokemon}) {
       {pokemon.map(p => (
         <div key={p}>{p}</div>
       ))}
-    </div>
+      </div>
   )
 }
