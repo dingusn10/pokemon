@@ -23,8 +23,6 @@ export default function PokeData() {
     if (loading) return "Loading...";
 
   return (
-      console.log(pokeType),
-      console.log(pokeSprite),
       console.log(moreInfo)
   )
 }
