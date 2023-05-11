@@ -28,6 +28,7 @@ function PokemonApp() {
         setNextPageUrl(res.data.next);
         setPreviousPageUrl(res.data.previous);
         setPokemon(res.data.results.map((p) => p.name));
+        const moreInfo = res.data.results.map((p) => p.url);
       });
 
     return () => cancel();
