@@ -8,7 +8,9 @@ export default function Loader() {
         <Image 
         src={load}
         width={60}
-        alt="Loading..."
+          alt="Loading..."
+          quality={100}
+          priority={true}
         />
       </div>
     </>

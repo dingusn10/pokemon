@@ -1,6 +1,10 @@
+'use client'
+
 import { useEffect, useState } from "react"
 import axios, { Canceler } from "axios"
 import Loader from "../Loader"
+import PokemonRender from "./PokemonRender"
+import Pagenation from "./Pagenation"
 
 
 
@@ -29,7 +33,7 @@ export default function PokemonList() {
         setCurrentPageUrl(nextPageUrl)
      }
 
-     function gotPrevPage() {
+     function gotoPrevPage() {
         setCurrentPageUrl(prevPageUrl)
      }
 
@@ -37,8 +41,11 @@ export default function PokemonList() {
 
     return (
         <>
-        <div></div>
-        
+        <PokemonRender pokemon={pokemon} /> 
+        <Pagenation
+            gotoNextPage={nextPageUrl ? gotoNextPage : null}    
+            gotoPrevPage={prevPageUrl ? gotoPrevPage : null}    
+            />
         </>
     )
 }
